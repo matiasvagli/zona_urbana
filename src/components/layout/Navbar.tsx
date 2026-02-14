@@ -1,12 +1,14 @@
 "use client";
 
 import { cn } from "@/lib/utils";
-import { Search, ArrowRight } from "lucide-react";
+import { Search, ArrowRight, Menu, X } from "lucide-react";
 import Link from "next/link";
 import { useEffect, useState } from "react";
+import { motion, AnimatePresence } from "framer-motion";
 
 export function Navbar() {
     const [scrolled, setScrolled] = useState(false);
+    const [isMenuOpen, setIsMenuOpen] = useState(false);
 
     useEffect(() => {
         const handleScroll = () => {
@@ -52,8 +54,65 @@ export function Navbar() {
                     <button className="text-neutral-300 hover:text-white transition-colors">
                         <Search className="w-5 h-5" />
                     </button>
+
+                    {/* Mobile Menu Toggle */}
+                    <button
+                        className="md:hidden text-neutral-300 hover:text-white transition-colors z-50 relative"
+                        onClick={() => setIsMenuOpen(!isMenuOpen)}
+                    >
+                        {isMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
+                    </button>
                 </div>
             </div>
+
+            {/* Mobile Menu Overlay */}
+            <AnimatePresence>
+                {isMenuOpen && (
+                    <motion.div
+                        initial={{ opacity: 0, y: -20 }}
+                        animate={{ opacity: 1, y: 0 }}
+                        exit={{ opacity: 0, y: -20 }}
+                        className="fixed inset-0 z-40 bg-black/95 backdrop-blur-xl md:hidden pt-24 px-6 flex flex-col"
+                    >
+                        <div className="flex flex-col gap-6 text-2xl font-medium text-white/80">
+                            <Link
+                                href="#"
+                                onClick={() => setIsMenuOpen(false)}
+                                className="border-b border-white/10 pb-4 hover:text-white hover:border-brand-blue/50 transition-all"
+                            >
+                                Productos
+                            </Link>
+                            <Link
+                                href="#"
+                                onClick={() => setIsMenuOpen(false)}
+                                className="border-b border-white/10 pb-4 hover:text-white hover:border-brand-blue/50 transition-all"
+                            >
+                                Ofrece tu espacio
+                            </Link>
+                            <Link
+                                href="#"
+                                onClick={() => setIsMenuOpen(false)}
+                                className="border-b border-white/10 pb-4 hover:text-white hover:border-brand-blue/50 transition-all"
+                            >
+                                Quienes somos
+                            </Link>
+                            <Link
+                                href="#contact"
+                                onClick={() => setIsMenuOpen(false)}
+                                className="border-b border-white/10 pb-4 hover:text-white hover:border-brand-blue/50 transition-all"
+                            >
+                                Contacto
+                            </Link>
+                        </div>
+
+                        <div className="mt-auto mb-12 space-y-4">
+                            <p className="text-neutral-500 text-sm uppercase tracking-widest">Contacto</p>
+                            <p className="text-xl text-white">+54 9 11 1234-5678</p>
+                            <p className="text-neutral-400">info@zonaurbana.com.ar</p>
+                        </div>
+                    </motion.div>
+                )}
+            </AnimatePresence>
         </nav>
     );
 }

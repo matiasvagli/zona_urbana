@@ -7,11 +7,9 @@ export function Hero() {
         <section className="relative h-screen w-full overflow-hidden flex items-center justify-center bg-black">
             {/* Background with blur effect using the billboard image colors */}
             <div
-                className="absolute inset-1 bg-cover bg-center z-0 opacity-60 blur-[-1px]"
+                className="absolute inset-0 bg-cover bg-center bg-no-repeat z-0 opacity-60 blur-sm md:blur-0"
                 style={{
                     backgroundImage: "url('/zonanoche.jpg')",
-                    backgroundSize: "80%"
-
                 }}
             />
 
