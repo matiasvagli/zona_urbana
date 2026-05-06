@@ -44,10 +44,10 @@ export function Navbar() {
                 </Link>
 
                 <div className="hidden md:flex items-center gap-8 text-sm font-medium text-neutral-300">
-                    <Link href="#" className="hover:text-white transition-colors">Productos</Link>
-                    <Link href="#" className="hover:text-white transition-colors">Ofrece tu espacio</Link>
-                    <Link href="#" className="hover:text-white transition-colors">Quienes somos</Link>
-                    <Link href="#" className="hover:text-white transition-colors">Contacto</Link>
+                    <Link href="#portfolio" className="hover:text-white transition-colors">Nuestra Red</Link>
+                    <Link href="#ofrece" className="hover:text-white transition-colors">Ofrece tu espacio</Link>
+                    <Link href="#mapa" className="hover:text-white transition-colors">Mapa de Cobertura</Link>
+                    <Link href="#mapa" className="hover:text-white transition-colors">Contacto</Link>
                 </div>
 
                 <div className="flex items-center gap-4">
@@ -76,28 +76,28 @@ export function Navbar() {
                     >
                         <div className="flex flex-col gap-6 text-2xl font-medium text-white/80">
                             <Link
-                                href="#"
+                                href="#portfolio"
                                 onClick={() => setIsMenuOpen(false)}
                                 className="border-b border-white/10 pb-4 hover:text-white hover:border-brand-blue/50 transition-all"
                             >
-                                Productos
+                                Nuestra Red
                             </Link>
                             <Link
-                                href="#"
+                                href="#ofrece"
                                 onClick={() => setIsMenuOpen(false)}
                                 className="border-b border-white/10 pb-4 hover:text-white hover:border-brand-blue/50 transition-all"
                             >
                                 Ofrece tu espacio
                             </Link>
                             <Link
-                                href="#"
+                                href="#mapa"
                                 onClick={() => setIsMenuOpen(false)}
                                 className="border-b border-white/10 pb-4 hover:text-white hover:border-brand-blue/50 transition-all"
                             >
-                                Quienes somos
+                                Mapa de Cobertura
                             </Link>
                             <Link
-                                href="#contact"
+                                href="#mapa"
                                 onClick={() => setIsMenuOpen(false)}
                                 className="border-b border-white/10 pb-4 hover:text-white hover:border-brand-blue/50 transition-all"
                             >

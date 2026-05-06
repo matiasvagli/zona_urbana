@@ -5,7 +5,7 @@ import { ArrowRight } from "lucide-react";
 
 export const SellYourSpace = () => {
     return (
-        <section className="relative py-24 overflow-hidden">
+        <section className="relative py-24 overflow-hidden" id="ofrece">
             {/* Background with gradient darker than main bg to separate sections */}
             <div className="absolute inset-0 bg-brand-dark/50" />
 
