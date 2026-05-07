@@ -21,6 +21,14 @@ const slides = [
         tag: "DISPONIBLE"
     },
     {
+        image: "/cartepubli.jpeg",
+        title: "Cartel Vía Pública",
+        location: "Principales Accesos",
+        format: "Extra",
+        impact: "+1M",
+        tag: "PREMIUM"
+    },
+    {
         image: "/pantalla.jpg",
         title: "Impacto Nocturno",
         location: "Principales Accesos",
@@ -28,10 +36,11 @@ const slides = [
         impact: "+1M",
         tag: "PREMIUM"
     },
+
     {
-        image: "/comerciozona.jpg",
+        image: "/mac3.jpeg",
         title: "Zona Comercial",
-        location: "Canning",
+        location: "Ezeiza",
         format: "Skyscraper 25x15m",
         impact: "+1.2M",
         tag: "DISPONIBLE"
@@ -207,6 +216,9 @@ export function Hero() {
                                         <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M22 16.36v-1.72L13 10V3.5C13 2.67 12.33 2 11.5 2S10 2.67 10 3.5V10L1 14.64v1.72l9-2.8V19l-2 1.5v1.5l3-1 3 1v-1.5L12 19v-5.44l9 2.8z" /></svg>
                                         Aerolíneas
                                     </span>
+
+                                    {/* LOCALIZA */}
+                                    <span className="text-3xl md:text-5xl font-black text-[#008e43] tracking-tighter italic uppercase">Localiza</span>
 
                                     {/* AA2000 */}
                                     <div className="flex items-center border-2 border-white/20 px-3 py-1 rounded-sm">

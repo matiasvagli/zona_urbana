@@ -9,10 +9,14 @@ export const worksImages: Record<string, { src: string; caption: string }[]> = {
         { src: "/mono4.jpeg", caption: "Monoposte LED — Av. Central" },
         { src: "/mono5.jpeg", caption: "Cobertura Regional — Ruta 2" },
         { src: "/comerciozona.jpg", caption: "Posición Exclusiva — Acceso Comercial" },
-        { src: "/mono7.jpeg", caption: "Monoposte Gran Formato — Enlace Urbano" },
-
-        { src: "/zona.jpg", caption: "Posición Estratégica — Zona Urbana" },
+        { src: "/mac2.jpeg", caption: "Monoposte Gran Formato — Enlace Urbano" },
+        { src: "/mac6", caption: "Posición Estratégica — Zona Urbana" },
+        { src: "/mac3.jpeg", caption: "Monoposte Gran Formato — Enlace Urbano" },
         { src: "/zonanoche.jpg", caption: "Cartel Nocturno — Vista Panorámica" },
+        { src: "/mac5.jpeg", caption: "Monoposte LED — Av. Central" },
+
+
+
     ],
     "02": [ // Negocios & Ploteos
         { src: "/marque1.jpeg", caption: "Marquesina Premium — Local Comercial" },
@@ -21,32 +25,41 @@ export const worksImages: Record<string, { src: string; caption: string }[]> = {
         { src: "/marque4.jpeg", caption: "Fachada  — Retail" },
         { src: "/marque5.jpeg", caption: "Marquesina luminaria" },
         { src: "/marque6.jpeg", caption: "Señalética de Identidad — Local" },
-        { src: "/marque7.jpeg", caption: "Marquesina Gran Formato — Showroom , nuestro taller" }
+        { src: "/marque7.jpeg", caption: "Marquesina Gran Formato — Showroom , nuestro taller" },
+        { src: "/nego.jpeg", caption: "Marquesina Gran Formato  " },
+        { src: "/nego2.jpeg", caption: "Marquesina luminaria" },
+
+
     ],
     "03": [ // Señalética & Fachadas
         { src: "/seña1.jpeg", caption: "Sistema de Señalización Integral — Estructura" },
-        { src: "/seña2.jpeg", caption: "Tótem Informativo — Acceso Principal" },
-        { src: "/seña3.jpeg", caption: "Fachada Corporativa — Diseño 360°" },
+
+
         { src: "/seña4.jpeg", caption: "Corpóreo Iluminado — Identidad Visual" },
         { src: "/seña5.jpeg", caption: "Señalización Interna — Orientación" },
         { src: "/seña6.jpeg", caption: "Directorio de Piso — Estética Minimalista" },
-        { src: "/seña7.jpeg", caption: "Letrero de Salida — Seguridad & Diseño" },
+        { src: "/seña7.jpeg", caption: "Nuestra Flota — Seguridad & Diseño" },
         { src: "/seña8.jpeg", caption: "Panel Informativo — Zona Comercial" },
-        { src: "/seña9.jpeg", caption: "Corpóreo en Altura — Visibilidad" },
+        { src: "/seña9.jpeg", caption: "Señalización — Visibilidad" },
+        { src: "/seña3.jpeg", caption: "Fachada Corporativa — Diseño 360°" },
         { src: "/seña10.jpeg", caption: "Señalización en bajo nivel" },
         { src: "/seña11.jpeg", caption: "Placa de Marca — Lona Premium" },
         { src: "/seña12.jpeg", caption: "Revestimiento publicitario" },
         { src: "/seña13.jpeg", caption: "Detalle de Señalética — Acabado" },
     ],
     "04": [ // Impresión & Formato
+        { src: "/arqui1.jpeg", caption: "Gigantografía — Parking" },
+        { src: "/imprezona.jpeg", caption: "Gigantografía — Parking" },
         { src: "/impre.jpeg", caption: "Gigantografía — Parking" },
         { src: "/impre1.jpeg", caption: "Gigantografía — Campaña Lanzamiento" },
-        { src: "/impre2.jpeg", caption: "Gigantografía — Impresoras de ultima generacion" },
+        { src: "/impre2.jpeg", caption: "Gigantografía — Impresoras de última generación" },
         { src: "/impre3.jpeg", caption: "Gigantografía — Campaña Lanzamiento" },
         { src: "/impre4.jpeg", caption: "Gigantografía — Ploteado de local comercial" },
         { src: "/impre5.jpeg", caption: "Gigantografía — Campaña Lanzamiento" },
-
-    ],
+        { src: "/imprex1.jpeg", caption: "Ploteado Vehícular " },
+        { src: "/imprex2.jpeg", caption: "Ploteado Vehícular " },
+        { src: "/imprexx.jpeg", caption: "Impresion ultra HD" }
+    ]
 };
 
 interface WorksModalProps {

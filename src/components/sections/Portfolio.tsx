@@ -37,7 +37,7 @@ const services = [
         category: "Impresión & Formato",
         title: "Grandes Formatos",
         desc: "Impresión de alta resolución para gigantografías, banners y piezas gráficas especiales.",
-        image: "/imprezona.jpeg",
+        image: "/arqui1.jpeg",
         accentColor: "#dc2626",
         stats: [{ label: "m² Mes", value: "5000+" }, { label: "Precisión", value: "Full HD" }]
     }
