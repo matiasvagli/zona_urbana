@@ -4,11 +4,11 @@ import { motion, AnimatePresence } from "framer-motion";
 export const worksImages: Record<string, { src: string; caption: string }[]> = {
     "01": [ // Vía Pública
         { src: "/mono1.jpeg", caption: "Monoposte Premium — Ruta Nacional" },
-        { src: "/mono2.jpeg", caption: "Posición Estratégica — Acceso Norte" },
-        { src: "/mono3.jpeg", caption: "Impacto Visual — Corredor Oeste" },
+        { src: "/mono2.jpeg", caption: "Posición Estratégica — Acceso" },
+        { src: "/mono3.jpeg", caption: "Impacto Visual — Corredor" },
         { src: "/mono4.jpeg", caption: "Monoposte LED — Av. Central" },
         { src: "/mono5.jpeg", caption: "Cobertura Regional — Ruta 2" },
-        { src: "/mono6.jpeg", caption: "Posición Exclusiva — Acceso Sur" },
+        { src: "/comerciozona.jpg", caption: "Posición Exclusiva — Acceso Comercial" },
         { src: "/mono7.jpeg", caption: "Monoposte Gran Formato — Enlace Urbano" },
 
         { src: "/zona.jpg", caption: "Posición Estratégica — Zona Urbana" },
@@ -39,7 +39,13 @@ export const worksImages: Record<string, { src: string; caption: string }[]> = {
         { src: "/seña13.jpeg", caption: "Detalle de Señalética — Acabado" },
     ],
     "04": [ // Impresión & Formato
-        { src: "/comerciozona.jpg", caption: "Gigantografía — Campaña Lanzamiento" },
+        { src: "/impre.jpeg", caption: "Gigantografía — Parking" },
+        { src: "/impre1.jpeg", caption: "Gigantografía — Campaña Lanzamiento" },
+        { src: "/impre2.jpeg", caption: "Gigantografía — Impresoras de ultima generacion" },
+        { src: "/impre3.jpeg", caption: "Gigantografía — Campaña Lanzamiento" },
+        { src: "/impre4.jpeg", caption: "Gigantografía — Ploteado de local comercial" },
+        { src: "/impre5.jpeg", caption: "Gigantografía — Campaña Lanzamiento" },
+
     ],
 };
 
