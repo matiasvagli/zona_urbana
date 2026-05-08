@@ -3,24 +3,25 @@ import { motion, AnimatePresence } from "framer-motion";
 
 export const worksImages: Record<string, { src: string; caption: string }[]> = {
     "01": [ // Vía Pública
-        { src: "/mono1.jpeg", caption: "Monoposte Premium — Ruta Nacional" },
-        { src: "/mono2.jpeg", caption: "Posición Estratégica — Acceso" },
+        { src: "/mono1.jpeg", caption: "Monoposte Premium — Ruta " },
+        { src: "/cartepubli.jpeg", caption: "Cartel large banner — Acceso" },
         { src: "/mono3.jpeg", caption: "Impacto Visual — Corredor" },
-        { src: "/mono4.jpeg", caption: "Monoposte LED — Av. Central" },
-        { src: "/mono5.jpeg", caption: "Cobertura Regional — Ruta 2" },
+        { src: "/mono4.jpeg", caption: "Monoposte Iluminado— Av. Central" },
+        { src: "/m1.jpeg", caption: "Cobertura Transluminada — Ruta " },
         { src: "/comerciozona.jpg", caption: "Posición Exclusiva — Acceso Comercial" },
         { src: "/mac2.jpeg", caption: "Monoposte Gran Formato — Enlace Urbano" },
-        { src: "/mac6", caption: "Posición Estratégica — Zona Urbana" },
-        { src: "/mac3.jpeg", caption: "Monoposte Gran Formato — Enlace Urbano" },
+        { src: "/mono2.jpeg", caption: "Posición Estratégica — Zona Urbana" },
+        { src: "/mac3.jpeg", caption: "Transluminado — Enlace Urbano" },
         { src: "/zonanoche.jpg", caption: "Cartel Nocturno — Vista Panorámica" },
-        { src: "/mac5.jpeg", caption: "Monoposte LED — Av. Central" },
+        { src: "/mac5.jpeg", caption: "Monoposte Transluminado — Av. Central" },
+
 
 
 
     ],
     "02": [ // Negocios & Ploteos
         { src: "/marque1.jpeg", caption: "Marquesina Premium — Local Comercial" },
-        { src: "/marque2.jpeg", caption: "Cartelería Frontlight — Punto de Venta" },
+        { src: "/marque2.jpeg", caption: "Cartelería luminaria — Punto de Venta" },
         { src: "/marque3.jpeg", caption: "Corpóreos frontal" },
         { src: "/marque4.jpeg", caption: "Fachada  — Retail" },
         { src: "/marque5.jpeg", caption: "Marquesina luminaria" },
@@ -41,24 +42,25 @@ export const worksImages: Record<string, { src: string; caption: string }[]> = {
         { src: "/seña7.jpeg", caption: "Nuestra Flota — Seguridad & Diseño" },
         { src: "/seña8.jpeg", caption: "Panel Informativo — Zona Comercial" },
         { src: "/seña9.jpeg", caption: "Señalización — Visibilidad" },
-        { src: "/seña3.jpeg", caption: "Fachada Corporativa — Diseño 360°" },
+        { src: "/totem.jpeg", caption: "Totem informativo — Diseño 360°" },
         { src: "/seña10.jpeg", caption: "Señalización en bajo nivel" },
         { src: "/seña11.jpeg", caption: "Placa de Marca — Lona Premium" },
         { src: "/seña12.jpeg", caption: "Revestimiento publicitario" },
         { src: "/seña13.jpeg", caption: "Detalle de Señalética — Acabado" },
     ],
     "04": [ // Impresión & Formato
-        { src: "/arqui1.jpeg", caption: "Gigantografía — Parking" },
-        { src: "/imprezona.jpeg", caption: "Gigantografía — Parking" },
+        { src: "/arqui1.jpeg", caption: "Totem despedida " },
+        { src: "/imprezona.jpeg", caption: "Maqueta publicitaria " },
         { src: "/impre.jpeg", caption: "Gigantografía — Parking" },
         { src: "/impre1.jpeg", caption: "Gigantografía — Campaña Lanzamiento" },
         { src: "/impre2.jpeg", caption: "Gigantografía — Impresoras de última generación" },
         { src: "/impre3.jpeg", caption: "Gigantografía — Campaña Lanzamiento" },
         { src: "/impre4.jpeg", caption: "Gigantografía — Ploteado de local comercial" },
         { src: "/impre5.jpeg", caption: "Gigantografía — Campaña Lanzamiento" },
-        { src: "/imprex1.jpeg", caption: "Ploteado Vehícular " },
         { src: "/imprex2.jpeg", caption: "Ploteado Vehícular " },
+        { src: "/imprex1.jpeg", caption: "Ploteado Vehícular " },
         { src: "/imprexx.jpeg", caption: "Impresion ultra HD" }
+
     ]
 };
 
