@@ -3,6 +3,7 @@
 import { cn } from "@/lib/utils";
 import { Search, ArrowRight, Menu, X } from "lucide-react";
 import Link from "next/link";
+import Image from "next/image";
 import { useEffect, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 
@@ -26,21 +27,17 @@ export function Navbar() {
             )}
         >
             <div className="w-full px-4 md:px-8 flex items-center justify-between">
-                <Link href="/" className="flex items-center gap-3 group">
-                    {/* Icon: White square with Red Arrow */}
-                    <div className="w-10 h-10 bg-white rounded-md flex items-center justify-center shrink-0 shadow-lg group-hover:scale-105 transition-transform duration-300">
-                        <ArrowRight className="text-[#E61E25] w-6 h-6 stroke-[3]" />
+                <Link href="/" className="flex items-center group">
+                    <div className="relative w-40 h-14 md:w-56 md:h-16 group-hover:scale-105 transition-transform duration-300">
+                        <Image 
+                            src="/logo.jpeg" 
+                            alt="Zona Urbana" 
+                            fill 
+                            className="object-contain object-left" 
+                            priority 
+                        />
                     </div>
 
-                    {/* Text */}
-                    <div className="flex flex-col -space-y-1">
-                        <span className="text-xl md:text-2xl font-black tracking-widest text-white uppercase leading-none font-sans group-hover:text-neutral-200 transition-colors">
-                            ZONA URBANA
-                        </span>
-                        <span className="text-[0.65rem] md:text-xs font-medium text-neutral-300 tracking-wider uppercase group-hover:text-white transition-colors">
-                            publicidad en vía pública
-                        </span>
-                    </div>
                 </Link>
 
                 <div className="hidden md:flex items-center gap-8 text-sm font-medium text-neutral-300">

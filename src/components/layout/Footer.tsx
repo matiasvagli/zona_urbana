@@ -1,6 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
+import Image from "next/image";
 
 export function Footer() {
     return (
@@ -11,12 +12,14 @@ export function Footer() {
                     {/* Branding */}
                     <div className="space-y-6">
                         <div className="flex items-center gap-2">
-                            <div className="w-8 h-8 bg-brand-blue flex items-center justify-center rounded-sm">
-                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="white" strokeWidth="3">
-                                    <path d="M5 12h14M12 5l7 7-7 7" />
-                                </svg>
+                            <div className="relative w-40 h-14 md:w-48 md:h-16">
+                                <Image 
+                                    src="/logo.jpeg" 
+                                    alt="Zona Urbana" 
+                                    fill 
+                                    className="object-contain object-left" 
+                                />
                             </div>
-                            <span className="text-xl font-black uppercase tracking-tighter text-white">ZONA URBANA</span>
                         </div>
                         <p className="text-neutral-500 text-sm leading-relaxed max-w-xs">
                             Expertos en comunicación visual y publicidad exterior. Transformamos marcas en hitos urbanos.

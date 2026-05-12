@@ -15,19 +15,17 @@
   --background: #0f0f0f;
   /* Slightly lighter than #050505 */
   --foreground: #ededed;
-  --brand-blue: #2563eb;
-  --brand-orange: #f97316;
-  --brand-dark: #18181b;
-  /* Zinc-900, lighter than #0a0a0a */
-  --brand-darker: #09090b;
-  /* Zinc-950 */
+  --brand-blue: #dc2626; /* Red instead of blue to keep class names working */
+  --brand-orange: #71717a; /* Gray */
+  --brand-dark: #18181b; /* Dark Gray */
+  --brand-darker: #09090b; /* Black/Darker Gray */
 }
 
 /* Oklch overrides for modern browsers */
 @supports (color: oklch(0 0 0)) {
   :root {
-    --brand-blue: oklch(0.55 0.25 260);
-    --brand-orange: oklch(0.65 0.22 35);
+    --brand-blue: oklch(0.6 0.25 29);
+    --brand-orange: oklch(0.55 0 0);
   }
 }
 
