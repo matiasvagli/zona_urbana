@@ -9,8 +9,8 @@ const services = [
         id: "01",
         category: "Publicidad Vial",
         title: "Vía Pública & LED",
-        desc: "Monopostes estratégicos y pantallas LED de gran formato en los principales accesos y rutas.",
-        image: "/mono4.jpeg",
+        desc: "Grandes formatos estratégicos y pantallas LED de gran formato en los principales accesos y rutas.",
+        image: "/via-publica/mono4.jpeg",
         accentColor: "#2563eb",
         stats: [{ label: "Ubicaciones", value: "+120" }, { label: "Impacto", value: "Masivo" }]
     },
@@ -19,7 +19,7 @@ const services = [
         category: "Digital & Dinámico",
         title: "Negocios & Ploteos",
         desc: "Marquesinas, cartelería comercial, corpóreos y ploteos integrales para potenciar tu marca.",
-        image: "/marque6.jpeg",
+        image: "/negocios-ploteos/sancor.jpeg",
         accentColor: "#7c3aed",
         stats: [{ label: "Locales", value: "300+" }, { label: "Calidad", value: "Premium" }]
     },
@@ -27,17 +27,17 @@ const services = [
         id: "03",
         category: "Señalética & Fachadas",
         title: "Arquitectura Comercial",
-        desc: "Identidad corporativa aplicada a fachadas y sistemas de señalización para grandes superficies.",
-        image: "/seña3.jpeg",
+        desc: "Identidad corporativa aplicada a fachadas y sistemas de señalización, colocación sobre grandes superficies.",
+        image: "/senaletica/ca.jpeg",
         accentColor: "#059669",
         stats: [{ label: "Proyectos", value: "+80" }, { label: "Diseño", value: "360°" }]
     },
     {
         id: "04",
         category: "Impresión & Formato",
-        title: "Grandes Formatos",
+        title: "Mobiliario urbano",
         desc: "Impresión de alta resolución para gigantografías, banners y piezas gráficas especiales.",
-        image: "/arqui1.jpeg",
+        image: "/impresion/arqui1.jpeg",
         accentColor: "#dc2626",
         stats: [{ label: "m² Mes", value: "5000+" }, { label: "Precisión", value: "Full HD" }]
     }

@@ -6,7 +6,7 @@ import { BrandMarquee } from "@/components/ui/BrandMarquee";
 
 const slides = [
     {
-        image: "/mono1.jpeg",
+        image: "/via-publica/mono1.jpeg",
         title: "Acceso Canning",
         location: "Ezeiza - Canning",
         format: "Frente de Ruta",
@@ -14,7 +14,7 @@ const slides = [
         tag: "DISPONIBLE"
     },
     {
-        image: "/zona.jpg",
+        image: "/via-publica/zona.jpg",
         title: "Zona Sur Hub",
         location: "Avenida San Martin",
         format: "Monoposte 10x5m",
@@ -22,7 +22,7 @@ const slides = [
         tag: "DISPONIBLE"
     },
     {
-        image: "/cartepubli.jpeg",
+        image: "/via-publica/cartepubli.jpeg",
         title: "Cartel Vía Pública",
         location: "Principales Accesos",
         format: "Extra",
@@ -30,7 +30,7 @@ const slides = [
         tag: "PREMIUM"
     },
     {
-        image: "/pantalla.jpg",
+        image: "/via-publica/pantalla.jpg",
         title: "Impacto Nocturno",
         location: "Principales Accesos",
         format: "Iluminación LED Front",
@@ -39,13 +39,14 @@ const slides = [
     },
 
     {
-        image: "/mac3.jpeg",
+        image: "/via-publica/mac3.jpeg",
         title: "Zona Comercial",
         location: "Ezeiza",
         format: "Skyscraper 25x15m",
         impact: "+1.2M",
         tag: "DISPONIBLE"
     },
+
 
 ];
 
@@ -68,7 +69,7 @@ export function Hero() {
                 {/* Main Background Image */}
                 <div
                     className="absolute inset-0 bg-cover bg-center opacity-40 scale-110"
-                    style={{ backgroundImage: 'url(/zonanoche.jpg)' }}
+                    style={{ backgroundImage: 'url(/via-publica/zonanoche.jpg)' }}
                 />
 
                 {/* Overlays for Depth */}
