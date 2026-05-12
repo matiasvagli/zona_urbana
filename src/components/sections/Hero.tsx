@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
+import { BrandMarquee } from "@/components/ui/BrandMarquee";
 
 const slides = [
     {
@@ -188,59 +189,7 @@ export function Hero() {
                         <div className="h-px flex-1 bg-gradient-to-r from-white/10 to-transparent" />
                     </div>
 
-                    <div className="relative overflow-hidden w-full group py-4">
-                        <motion.div
-                            animate={{ x: ["0%", "-50%"] }}
-                            transition={{ duration: 40, repeat: Infinity, ease: "linear", repeatType: "loop" }}
-                            className="flex w-max whitespace-nowrap items-center opacity-40 group-hover:opacity-100 transition-all duration-700"
-                        >
-                            {[...Array(2)].map((_, i) => (
-                                <div key={i} className="flex items-center gap-16 md:gap-24 pr-16 md:pr-24">
-                                    {/* MOSTAZA */}
-                                    <span className="text-3xl md:text-5xl font-black text-red-500 tracking-tighter uppercase italic drop-shadow-sm">MOSTAZA</span>
-
-                                    {/* MCDONALD'S */}
-                                    <span className="text-3xl md:text-5xl font-black text-yellow-500 tracking-tighter ">McDonald's</span>
-
-                                    {/* CABIFY */}
-                                    <span className="text-2xl md:text-4xl font-black text-[#7350ff] tracking-tighter lowercase">cabify</span>
-
-                                    {/* DIRECTV */}
-                                    <div className="text-2xl md:text-4xl tracking-tighter flex items-center">
-                                        <span className="font-black text-blue-500">DIREC</span>
-                                        <span className="font-light text-white">TV</span>
-                                    </div>
-
-                                    {/* Aerolineas Argentinas */}
-                                    <span className="text-xl md:text-3xl font-light text-sky-400 tracking-tight flex items-center gap-2">
-                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M22 16.36v-1.72L13 10V3.5C13 2.67 12.33 2 11.5 2S10 2.67 10 3.5V10L1 14.64v1.72l9-2.8V19l-2 1.5v1.5l3-1 3 1v-1.5L12 19v-5.44l9 2.8z" /></svg>
-                                        Aerolíneas
-                                    </span>
-
-                                    {/* LOCALIZA */}
-                                    <span className="text-3xl md:text-5xl font-black text-[#008e43] tracking-tighter italic uppercase">Localiza</span>
-
-                                    {/* AA2000 */}
-                                    <div className="flex items-center border-2 border-white/20 px-3 py-1 rounded-sm">
-                                        <span className="text-sm md:text-lg font-bold text-white tracking-widest uppercase">AA2000</span>
-                                    </div>
-
-                                    {/* MARDIROS */}
-                                    <span className="text-2xl md:text-4xl font-black text-white tracking-[0.3em] uppercase border-y-2 border-white/20 py-1">MARDIROS</span>
-
-                                    {/* Sancor Seguros */}
-                                    <span className="text-xl md:text-3xl font-serif italic text-emerald-400 tracking-tight">Sancor Seguros</span>
-
-                                    {/* SILOPARK */}
-                                    <span className="text-2xl md:text-4xl font-black text-brand-blue tracking-tighter uppercase relative">
-                                        SILOPARK<span className="absolute -top-1 -right-3 text-brand-blue text-sm">®</span>
-                                    </span>
-                                </div>
-                            ))}
-                        </motion.div>
-                        <div className="absolute inset-y-0 left-0 w-32 bg-gradient-to-r from-black to-transparent z-10" />
-                        <div className="absolute inset-y-0 right-0 w-32 bg-gradient-to-l from-black to-transparent z-10" />
-                    </div>
+                    <BrandMarquee />
                 </motion.div>
             </div>
 
