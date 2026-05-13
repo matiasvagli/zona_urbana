@@ -27,11 +27,11 @@ const brands = [
     { name: "Mostaza", logo: "/logos/Mostaza3.svg" },
 
     { name: "Toribio Achaval", logo: "/logos/torivio.png" },
-    { name: "Guapaletas", logo: "/logos/guapa.png", scale: 1.2, opacity: 1.5 },
+    { name: "Guapaletas", logo: "/logos/guapa.png", scale: 1.4, opacity: 1 },
     { name: "Persicco", logo: "/logos/Logo_Persicco.jpeg", scale: 0.8 },
     { name: "BNA", logo: "/logos/bna.jpg.webp" },
     { name: "Alikal", logo: "/logos/alikal.jpg" },
-    //{ name: "Pameli" },
+    { name: "Pameli", logo: "/logos/pame.jpeg" },
 ];
 
 // Separador entre marcas

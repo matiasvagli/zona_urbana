@@ -104,7 +104,7 @@ export function Navbar() {
 
                         <div className="mt-auto mb-12 space-y-4">
                             <p className="text-neutral-500 text-sm uppercase tracking-widest">Contacto</p>
-                            <p className="text-xl text-white">+54 9 11 1234-5678</p>
+                            <p className="text-xl text-white">+54 9 11 6382-8772</p>
                             <p className="text-neutral-400">info@zonaurbana.com.ar</p>
                         </div>
                     </motion.div>

@@ -4,7 +4,7 @@ Para que el sitio se vea profesional, necesitamos los logos de estas marcas en l
 
 ## 🔴 Pendientes de Cargar
 - [x] **Giannoni**
-- [ ] **Pameli**
+- [x] **Pameli**
 - [x] **Toribio Achaval**
 - [x] **Toribio** (mismo que anterior)
 - [x] **Guapaletas**
