@@ -5,15 +5,15 @@ Para que el sitio se vea profesional, necesitamos los logos de estas marcas en l
 ## 🔴 Pendientes de Cargar
 - [x] **Giannoni**
 - [ ] **Pameli**
-- [ ] **Toribio Achaval**
-- [ ] **Toribio**
-- [ ] **Guapaletas**
+- [x] **Toribio Achaval**
+- [x] **Toribio** (mismo que anterior)
+- [x] **Guapaletas**
 - [x] **Persicco**
 - [ ] **Cabify**
 - [x] **Mostaza**
-- [ ] **BNA** (Banco Nación)
+- [x] **BNA** (Banco Nación)
 - [ ] **Mercado Libre**
-- [ ] **Alikal**
+- [x] **Alikal**
 
 ## ✅ Instrucciones
 1. Busca el logo en alta calidad.

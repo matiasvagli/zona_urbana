@@ -11,7 +11,7 @@ const brands = [
     { name: "Sinteplast", logo: "/logos/sinte.png" },
     { name: "Santander", logo: "/logos/santander1.svg" },
     { name: "McDonald's", logo: "/logos/mcdonalds-china.svg" },
-    { name: "Samsung", logo: "/logos/samsung-electronics.svg" },
+    { name: "Samsung", logo: "/logos/samsung-electronics.svg", scale: 1.3, opacity: 1 },
     { name: "Movistar", logo: "/logos/logo-movistar.svg" },
     { name: "Carrefour", logo: "/logos/carrefour-logo-1.svg" },
     { name: "DirecTV", logo: "/logos/directv-logo-1.svg" },
@@ -22,15 +22,16 @@ const brands = [
     { name: "Patagonia", logo: "/logos/patagonia.png" },
     { name: "Aeropuertos Argentina", logo: "/logos/aa.webp" },
     { name: "American Tourister", logo: "/logos/american-tourister.svg" },
-    { name: "Samsonite", logo: "/logos/samsonite-logo.svg" },
+    { name: "Samsonite", logo: "/logos/samsonite-logo.svg", scale: 1.3, opacity: 1 },
     { name: "Giannoni", logo: "/logos/giaoni.png" },
     { name: "Mostaza", logo: "/logos/Mostaza3.svg" },
-    { name: "Pameli" },
-    { name: "Toribio Achaval" },
-    { name: "Guapaletas" },
+
+    { name: "Toribio Achaval", logo: "/logos/torivio.png" },
+    { name: "Guapaletas", logo: "/logos/guapa.png", scale: 1.2, opacity: 1.5 },
     { name: "Persicco", logo: "/logos/Logo_Persicco.jpeg", scale: 0.8 },
-    { name: "BNA" },
-    { name: "Alikal" },
+    { name: "BNA", logo: "/logos/bna.jpg.webp" },
+    { name: "Alikal", logo: "/logos/alikal.jpg" },
+    //{ name: "Pameli" },
 ];
 
 // Separador entre marcas
@@ -40,6 +41,7 @@ function Dot() {
 
 function BrandItem({ brand }: { brand: typeof brands[0] }) {
     const scale = (brand as any).scale || 1;
+    const opacity = (brand as any).opacity ?? 0.9;
 
     return (
         <div
@@ -47,7 +49,10 @@ function BrandItem({ brand }: { brand: typeof brands[0] }) {
             style={{ transform: `scale(${scale})` }}
         >
             {brand.logo ? (
-                <div className="relative w-32 h-12 md:w-48 md:h-24 opacity-90 hover:opacity-100 transition-all duration-500 filter brightness-110 contrast-125">
+                <div
+                    className="relative w-32 h-12 md:w-48 md:h-24 hover:opacity-100 transition-all duration-500 filter brightness-110 contrast-125"
+                    style={{ opacity }}
+                >
                     <img
                         src={brand.logo}
                         alt={brand.name}
